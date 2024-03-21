@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    font-family: "Jockey One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+
+    background-image: url("../assets/img/wallpaper.jpg");
+}
+
+.headerIndex{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(255, 255, 255, .7);
+    position: sticky;
+    top: 0;
+}
+
+.headerIndex div{
+    align-self: center;
+    width: 160px;
+}
+
+.headerIndex img{
+    width: 100%;
+}
+
+.navBar{
+    display: flex;
+    font-size: 1.5rem;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navBar a{
+    color: black;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.marca{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 0px 20px 15% 15%;
+}
+
+.marca div img{
+    width: 100%;
+    border: 2px solid black;
+}
+
+.historiaMarca img{
+    width: 50%;
+    padding: 0px 25%;
+}
+
+.historiaMarca h2{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.historiaMarca p{
+    align-self: center;
+    text-align: justify;
+}
+
+.foot{
+    width: 90%;
+    padding: 0px 5%;
+}
+
+.foot ul{
+    list-style: none;
+}
+
+.copyright a{
+    color: black;
+    text-decoration: none;
+}
+
+    
+.redes{
+    display: flex;
+    flex-direction: row;
+}
+
+.logoRedes{
+    width: 20px;
+    height: 20px;
+}
+
+.redes li{
+    padding-right: 5px;
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+}
+
+.tecnologias p{
+    width: 80%;
+    padding-bottom: 20px;    
+    align-self: center;
+    text-align: justify;
+}
+
+.tecnologias h2{
+    padding-left: 5%;
+    font-size: 1.5rem;
+}
+
+.imgTecnologias {
+    height: 160px;
+    padding-bottom: 20px;
+    align-self: center;
+}
+
+@media (min-width: 744px){
+    .headerIndex{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 10% 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .headerIndex img{
+        width: 100%;
+        height: 100%;
+        padding-left: 10%;
+    }
+
+    .headerIndex div{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        order: 1;
+    }
+
+    .headerIndex nav{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        align-self: center;
+    }
+
+    .navBar{
+        font-size: 2.5rem;
+        justify-content: center;
+        gap: 100px;    
+    }
+
+    h1 {
+        font-size: 4rem;
+        padding: 50px 0px;
+    }
+
+    .marca{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 15% 35% 35% 15%;
+        grid-template-rows: 1fr;
+        padding-bottom: 50px;
+    }
+
+    .marca div img{
+        border: 3px solid black;
+    }
+
+    .marca div{
+        grid-column: 2/3;
+        align-self: center;
+    }
+
+    .historiaMarca{
+        grid-column: 3/4;
+        width: 80%;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .historiaMarca img{
+        align-self: center;
+    }
+
+    .historiaMarca h2{
+        align-self: center;
+        font-size: 3rem;
+    }
+
+    .logoIndex{
+        width: 50%;
+        height: 50%;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .tecnologias {
+        padding-bottom: 30px;
+    }
+
+    .tecnologias p{
+        width: 50%;
+        padding-bottom: 30px;
+    }
+
+    .tecnologias h2{
+        padding-left: 20%;
+        font-size: 2rem;
+    }
+
+    .imgTecnologias {
+        height: 240px;
+        padding-bottom: 30px;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+        padding: 30px 15%;
+        font-size: 1.2rem;
+    }
+
+    .contacto p{
+        text-align: center;
+    }
+
+    .cuadro{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cuadro label{
+        padding-left: 5%;
+        padding-top: 10px;
+    }
+
+    .cuadro input{
+        align-self: center;
+        width: 90%;
+    }
+
+    .msj{
+        height: 400px;
+    }
+
+    .boton{
+        padding: 10px 5%;
+        width: 10% ;
+    }
+
+    .foot{
+        display: flex;
+        width: 100%;
+        height: 100px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .redes{
+        padding-right: 30px;
+    }
+    
+    .logoRedes{
+        width: 40px;
+        height: 40px;
+    }
+
+    .redes li{
+        padding-right: 0px;
+        padding-left: 15px;
+    }
+
+    .copyright{
+        padding-left: 30px;
+    }
+}
+
+@media (min-width: 1440px){
+    h1 {
+        font-size: 5rem;
+    }
+
+    .tecnologias h2{
+        font-size: 2.5rem;
+    }
+
+    p{
+        font-size: 1.5rem;
+    }
+
+    .contacto{
+        width: 40%;
+        padding: 30px 30%;
+    }
+}
+
+.adidas{
+    color: blue;
+}
+
+.nike{
+    color: red;
+}
+
+.saucony{
+    color: green;
+}
