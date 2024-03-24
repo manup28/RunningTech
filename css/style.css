@@ -129,11 +129,60 @@ h1{
     align-self: center;
 }
 
+.contacto{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 30px 15%;
+    font-size: 1.2rem;
+}
+
+.contacto p{
+    text-align: center;
+}
+
+.cuadro{
+    display: flex;
+    flex-direction: column;
+}
+
+.cuadro label{
+    padding-left: 5%;
+    padding-top: 10px;
+}
+
+.cuadro input{
+    align-self: center;
+    width: 90%;
+}
+
+.msj{
+    height: 200px;
+}
+
+.boton{
+    padding: 10px 5%;
+    width: 20% ;
+}
+
+.adidas{
+    color: blue;
+}
+
+.nike{
+    color: red;
+}
+
+.saucony{
+    color: green;
+}
+
+
 @media (min-width: 744px){
     .headerIndex{
         display: grid;
         width: 100%;
-        grid-template-columns: 10% 1fr;
+        grid-template-columns: 160px 1fr;
         grid-template-rows: 1fr;
     }
 
@@ -150,7 +199,7 @@ h1{
     }
 
     .headerIndex nav{
-        grid-column: 1/3;
+        grid-column: 2/3;
         grid-row: 1/2;
         align-self: center;
     }
@@ -158,19 +207,22 @@ h1{
     .navBar{
         font-size: 2.5rem;
         justify-content: center;
-        gap: 100px;    
+        gap: 10%;    
     }
+    */
 
     h1 {
         font-size: 4rem;
         padding: 50px 0px;
     }
 
+
     .marca{
         display: grid;
         width: 100%;
         grid-template-columns: 15% 35% 35% 15%;
         grid-template-rows: 1fr;
+        padding: 0;
         padding-bottom: 50px;
     }
 
@@ -208,6 +260,7 @@ h1{
         justify-self: center;
     }
 
+
     .tecnologias {
         padding-bottom: 30px;
     }
@@ -227,42 +280,6 @@ h1{
         padding-bottom: 30px;
     }
 
-    .contacto{
-        display: flex;
-        flex-direction: column;
-        width: 70%;
-        padding: 30px 15%;
-        font-size: 1.2rem;
-    }
-
-    .contacto p{
-        text-align: center;
-    }
-
-    .cuadro{
-        display: flex;
-        flex-direction: column;
-    }
-
-    .cuadro label{
-        padding-left: 5%;
-        padding-top: 10px;
-    }
-
-    .cuadro input{
-        align-self: center;
-        width: 90%;
-    }
-
-    .msj{
-        height: 400px;
-    }
-
-    .boton{
-        padding: 10px 5%;
-        width: 10% ;
-    }
-
     .foot{
         display: flex;
         width: 100%;
@@ -270,6 +287,7 @@ h1{
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        padding: 0;
     }
 
     .redes{
@@ -289,6 +307,10 @@ h1{
     .copyright{
         padding-left: 30px;
     }
+
+    p, .foot a{
+        font-size: 1.25rem;
+    }
 }
 
 @media (min-width: 1440px){
@@ -296,11 +318,30 @@ h1{
         font-size: 5rem;
     }
 
+    .headerIndex nav{
+        grid-column: 1/3;
+        grid-row: 1/2;
+        align-self: center;
+    }
+
+    .cuerpoPrincipal{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .marca{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+    
     .tecnologias h2{
         font-size: 2.5rem;
     }
 
-    p{
+    p, .foot a{
         font-size: 1.5rem;
     }
 
@@ -308,16 +349,4 @@ h1{
         width: 40%;
         padding: 30px 30%;
     }
-}
-
-.adidas{
-    color: blue;
-}
-
-.nike{
-    color: red;
-}
-
-.saucony{
-    color: green;
 }
