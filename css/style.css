@@ -9,7 +9,6 @@ body {
     font-weight: 400;
     font-style: normal;
 
-
     background-image: url("../assets/img/wallpaper.jpg");
 }
 
@@ -20,6 +19,7 @@ body {
     background-color: rgb(255, 255, 255, .7);
     position: sticky;
     top: 0;
+    z-index: 1000;
 }
 
 .headerIndex div{
@@ -325,6 +325,21 @@ h1{
         align-self: center;
     }
 
+    .navBar li:nth-child(1) a:hover{
+        color: blue;
+        text-decoration: underline;
+    }
+
+    .navBar li:nth-child(2) a:hover{
+        color: red;
+        text-decoration: underline;
+    }
+
+    .navBar li:nth-child(3) a:hover{
+        color: green;
+        text-decoration: underline;
+    }
+
     .cuerpoPrincipal{
         width: 100%;
         display: flex;
@@ -338,8 +353,22 @@ h1{
         flex-direction: column;
     }
 
+    .marca div img{
+        position: relative;
+        z-index: 1;
+        filter: grayscale(1);
+    }
+
+    .marca div img:hover{
+        filter: none;
+    }
+
     .tecnologias h2{
         font-size: 2.5rem;
+    }
+
+    .imgTecnologias {
+        height: 400px;
     }
 
     p, .foot li{
