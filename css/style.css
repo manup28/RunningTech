@@ -129,40 +129,8 @@ h1{
     align-self: center;
 }
 
-.contacto{
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    padding: 30px 15%;
-    font-size: 1.2rem;
-}
-
-.contacto p{
+.formulario p{
     text-align: center;
-}
-
-.cuadro{
-    display: flex;
-    flex-direction: column;
-}
-
-.cuadro label{
-    padding-left: 5%;
-    padding-top: 10px;
-}
-
-.cuadro input{
-    align-self: center;
-    width: 90%;
-}
-
-.msj{
-    height: 200px;
-}
-
-.boton{
-    padding: 10px 5%;
-    width: 20% ;
 }
 
 .adidas{
@@ -176,7 +144,6 @@ h1{
 .saucony{
     color: green;
 }
-
 
 @media (min-width: 744px){
     .headerIndex{
@@ -373,10 +340,5 @@ h1{
 
     p, .foot li{
         font-size: 1.5rem;
-    }
-
-    .contacto{
-        width: 40%;
-        padding: 30px 30%;
     }
 }
