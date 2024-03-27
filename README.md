@@ -1,0 +1,3 @@
+RunningTech es un sitio web creado originalmente por Manuel Pastor, el mismo busca reunir información en español acerca de las distintas tecnologías que utilizan las diferentes marcas para confeccionar los calzados de running, además de un breve repaso por la historia de la misma. Por el momento el sitio cuenta únicamente con información de las marcas adidas, Nike y Saucony.
+
+Actualmente, el sitio se encuentra en una fase temprana de edición pero se puede apreciar que todas las páginas cuentan con responsive, tanto para mobile como tablet, ademas del uso de pseudoclases en la barra de navegacion y en las imágenes de los calzados en la página principal. Por último se utilizó Bootstrap v5.3 para la maquetación del formulario de contacto.
