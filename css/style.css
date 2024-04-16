@@ -80,6 +80,12 @@ h1 {
     filter: blur(0);
     opacity: 1; } }
 
+.copySub {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 0px 10%;
+  padding-bottom: 20px; }
+
 .marca {
   display: flex;
   flex-direction: column;
@@ -159,6 +165,9 @@ footer {
   h1 {
     font-size: 4rem;
     padding: 50px 0px; }
+  .copySub {
+    font-size: 3rem;
+    padding-bottom: 50px; }
   .marca {
     display: grid;
     width: 100%;
@@ -235,6 +244,8 @@ footer {
       color: green; }
   h1 {
     font-size: 5rem; }
+  .copySub {
+    font-size: 3.5rem; }
   .cuerpoPrincipal {
     width: 100%;
     display: flex;
