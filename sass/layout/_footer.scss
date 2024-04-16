@@ -1,0 +1,21 @@
+footer{
+    width: 90%;
+    padding: 0px 10px 5% 5%;
+    ul{
+        list-style: none;
+        a{
+            color: black;
+        }
+    }
+    .redes{
+        display: flex;
+        flex-direction: row;
+        li{
+            padding-right: 5px;
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,51 @@
+.marca{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 0px 20px 15% 15%;
+    div{
+        img{
+            width: 100%;
+            border: 2px solid black;
+        }
+    }
+    article{
+        img{
+            width: 50%;
+            padding: 0px 25%;
+        }
+        h2{
+            text-align: center;
+            font-size: 1.5rem;
+        }
+        p{
+            width: 90%;
+            padding: 0px 10px 5% 5%;
+        }
+    }
+}
+
+.tecnologias {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    p{
+        width: 80%;
+        padding-bottom: 20px;    
+        align-self: center;
+        text-align: justify;
+    }
+    h2{
+        padding-left: 5%;
+        font-size: 1.5rem;
+    }
+    img{
+        height: 160px;
+        padding-bottom: 20px;
+        align-self: center;
+    }
+}
+
+.formulario p{
+    text-align: center;
+}
