@@ -18,30 +18,27 @@ body {
 .saucony {
   color: green; }
 
-header {
+header .barraBS {
   display: flex;
   flex-direction: column;
   width: 100%;
   background-color: rgba(255, 255, 255, 0.7);
-  position: sticky;
   top: 0;
   z-index: 1000; }
-  header div {
+  header .barraBS .logoBS {
     align-self: center;
     width: 160px; }
-  header img {
-    width: 100%; }
-  header nav ul {
-    display: flex;
-    font-size: 2rem;
-    list-style: none;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-    header nav ul a {
-      color: black;
-      text-decoration: none; }
+    header .barraBS .logoBS img {
+      width: 100%; }
+  header .barraBS .navBarBS {
+    justify-self: flex-start;
+    padding-left: 10%; }
+    header .barraBS .navBarBS div .listBS {
+      font-size: 2rem; }
+      header .barraBS .navBarBS div .listBS a {
+        color: black; }
 
-h1 {
+h1, .copySub {
   font-size: 2.75rem;
   text-align: center;
   padding: 20px 0px; }
@@ -82,18 +79,18 @@ h1 {
 
 .copySub {
   font-size: 1.5rem;
-  text-align: center;
-  padding: 0px 10%;
-  padding-bottom: 20px; }
+  padding: 0px 5% 20px 5%; }
 
 .marca {
   display: flex;
   flex-direction: column;
-  width: 70%;
-  padding: 0px 20px 15% 15%; }
-  .marca div img {
-    width: 100%;
-    border: 2px solid black; }
+  width: 100%;
+  padding: 0px 15% 20px 15%; }
+  .marca div {
+    padding: 0px 15%; }
+    .marca div img {
+      width: 100%;
+      border: 2px solid black; }
   .marca article img {
     width: 50%;
     padding: 0px 25%; }
@@ -101,13 +98,15 @@ h1 {
     text-align: center;
     font-size: 1.5rem; }
   .marca article p {
-    width: 90%;
-    padding: 0px 10px 5% 5%; }
+    width: 100%;
+    padding: 0px 5% 10px 5%;
+    text-align: center; }
 
 .tecnologias {
   display: flex;
   flex-direction: column;
-  padding-bottom: 20px; }
+  width: 100%;
+  padding: 0 0 20px 0; }
   .tecnologias p {
     width: 80%;
     padding-bottom: 20px;
@@ -140,34 +139,37 @@ footer {
         width: 20px;
         height: 20px; }
 
-@media (min-width: 744px) {
-  header {
+@media (min-width: 768px) {
+  header .barraBS {
     display: grid;
     width: 100%;
     grid-template-columns: 160px 1fr;
     grid-template-rows: 1fr; }
-    header div {
+    header .barraBS .logoBS {
       grid-column: 1/2;
       grid-row: 1/2;
-      order: 1; }
-    header img {
-      width: 100%;
-      height: 100%;
-      padding-left: 10%; }
-    header nav {
+      order: 1;
+      width: 180px; }
+      header .barraBS .logoBS img {
+        width: 100%;
+        height: 100%;
+        padding-left: 10%; }
+    header .barraBS .navBarBS {
       grid-column: 2/3;
       grid-row: 1/2;
-      align-self: center; }
-      header nav ul {
+      align-self: center;
+      justify-self: center;
+      padding: 0; }
+      header .barraBS .navBarBS div .listBS {
         font-size: 2.5rem;
         justify-content: center;
-        gap: 8%; }
-  h1 {
+        gap: 6%; }
+  h1, .copySub {
     font-size: 4rem;
     padding: 50px 0px; }
   .copySub {
     font-size: 3rem;
-    padding-bottom: 50px; }
+    padding: 0px 5% 50px 5%; }
   .marca {
     display: grid;
     width: 100%;
@@ -177,7 +179,8 @@ footer {
     padding-bottom: 50px; }
     .marca div {
       grid-column: 2/3;
-      align-self: center; }
+      align-self: center;
+      padding: 0; }
       .marca div img {
         border: 3px solid black; }
     .marca article {
@@ -230,19 +233,17 @@ footer {
           height: 40px; } }
 
 @media (min-width: 1440px) {
-  header nav {
+  header .barraBS .navBarBS {
     grid-column: 1/3;
     grid-row: 1/2;
-    align-self: center; }
-    header nav ul li a:hover {
-      text-decoration: underline; }
-    header nav ul li:nth-child(1) a:hover {
-      color: blue; }
-    header nav ul li:nth-child(2) a:hover {
-      color: red; }
-    header nav ul li:nth-child(3) a:hover {
-      color: green; }
-  h1 {
+    align-self: center;
+    justify-self: center;
+    padding: 0; }
+    header .barraBS .navBarBS div .listBS {
+      gap: 20%; }
+      header .barraBS .navBarBS div .listBS li a:hover {
+        text-decoration: underline; }
+  h1, .copySub {
     font-size: 5rem; }
   .copySub {
     font-size: 3.5rem; }

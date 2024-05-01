@@ -26,20 +26,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Jockey+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid">
-        <header>
-            <div>
+    <header class="sticky-top">
+        <div class="barraBS">
+            <div class="logoBS">
                 <a href="../index.html"><img src="../assets/img/logo.png" alt="logo RunningTech"></a>
             </div>
-            <nav>
-                <ul class="navBar">
-                    <li><a href="./adidas.html">adidas</a></li>
-                    <li><a href="./nike.html">Nike</a></li>
-                    <li><a href="./saucony.html">Saucony</a></li>
-                    <li><a href="#">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-md navBarBS">
+                <div class="container-fluid">
+                    <button class="navbar-toggler bg-body-tertiary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav listBS">
+                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./adidas.html">adidas</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./nike.html">Nike</a></li>
+                            <li class="nav-item"><a class="nav-link" href="./saucony.html">Saucony</a></li>
+                        </ul>
+                    </div>
+                </div>
             </nav>
-        </header>
+        </div>
+    </header>
+    <div class="container-fluid">
         <main>
             <div class="row justify-content-center mt-1 mb-5 formulario">
                 <p class="col-10">Te invitamos a que nos dejes tu consulta o sugerencia para poder seguir mejorando dia a dia</p>
